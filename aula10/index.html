@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form name="form1" method="post" action="http://hebertphp.awardspace.us/recebe.php">
+        <label for="login">Login</label> <input type="text" id="login" name="login" value="" placeholder="Digite seu login" required><b>*</b><br>
+        <label for="senha">Senha</label> <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required><b>*</b><br>
+        Data <input type="datetime-local" id="data" name="data"><br>
+        <input type="hidden" name="vai" value="já foi">
+        <h2>selecione uma ou mais limguagens</h2>
+        JS <input type="checkbox" name="JS"><br><label for="JS">JS</label><br>
+        PHP <input type="checkbox" name="php"><br> <label for="php">PHP</label><br>
+        SLQ <input type="checkbox" name="SLQ"><br> <label for="SLQ">SLQ</label><br>
+        <input type="radio" name="aula de hoje" value="segunda" id="segunda" required><label for="segunda">segunda</label><br>
+        <input type="radio" name="aula de hoje" value="Terça" id="terça"><label for="terça">terça</label><br>
+        <input type="radio" name="aula de hoje" value="Quarta" id="quarta"><label for="quarta">quarta</label><br>
+        <input type="radio" name="aula de hoje" value="Quinta" id="quinta"><label for="quinta">quinta</label><br>
+        <input type="radio" name="aula de hoje" value="Sexta" id="sexta"><label for="sexta">sexta</label><br>
+        <input type="submit" value="Enviar!"><input type="reset"  value="Limpar Dados!">
+
+        <br><br>Selecione UF <select name="uf">
+        <option></option> 
+        <option selected >SP</option> 
+        <option value="RJ">Rio de Janeiro</option>  
+        <option>MG</option> 
+        <option>ES</option>  
+        </select><br> 
+
+        Mensagem <br><textarea name="mgs" rows="10" cols="40" placeholder="Digite uma Mensagem"></textarea>
+        
+    </form><br>
+    <p><b>*</b> - Campo obrigaório</p>
+
+</body>
+</html>
